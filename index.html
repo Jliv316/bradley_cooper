@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John Livingston</title>
+  <style>
+    .wrapper{
+      display:grid;
+      grid-template-columns: 70% 30%;
+
+      /* grid-emplate-columns: 1fr 1fr 1frt; */
+      /* grid-column-gap:1em;
+      grid-row-gap:1em; */
+      grid-gap:1em;
+      /* grid-auto-rows:100px; */
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-auto-rows: 70px;
+      grid-gap:1em;
+    }
+
+    .nested > div{
+      border: #333 1px solid;
+      padding:1em;
+    }
+    .wrapper > div{
+      background: #eee;
+      padding: 1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae ex dolore voluptatem facere ipsa numquam nesciunt fuga delectus? Recusandae repudiandae vel, asperiores optio eaque magnam accusantium expedita eligendi nobis nesciunt error dignissimos dolor excepturi labore laudantium sunt odio tempore perferendis dolorum nihil consequuntur inventore repellat totam? Tempore, esse, molestiae officiis numquam beatae labore quia iusto maxime perspiciatis nostrum illo nam alias ipsa veniam quibusdam odit corporis totam, ducimus cupiditate at? Dicta unde deserunt fugiat vel a, facilis maxime vero.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, deleniti assumenda eius architecto perspiciatis nostrum dolorum sint esse repellendus voluptas ex omnis cum sit dolorem id necessitatibus voluptatum alias deserunt.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae ex dolore voluptatem facere ipsa numquam nesciunt
+      fuga delectus? Recusandae repudiandae vel, asperiores optio eaque magnam accusantium expedita eligendi nobis nesciunt error
+      dignissimos dolor excepturi labore laudantium sunt odio tempore perferendis dolorum nihil consequuntur inventore repellat
+      totam? Tempore, esse, molestiae officiis numquam beatae labore quia iusto maxime perspiciatis nostrum illo nam alias ipsa
+      veniam quibusdam odit corporis totam, ducimus cupiditate at? Dicta unde deserunt fugiat vel a, facilis maxime vero.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, deleniti assumenda eius architecto perspiciatis nostrum dolorum
+      sint esse repellendus voluptas ex omnis cum sit dolorem id necessitatibus voluptatum alias deserunt.
+    </div>
+    <div class="nested">
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+      <div>lorem</div>
+    </div>
+  </div>
+</body>
+</html>
